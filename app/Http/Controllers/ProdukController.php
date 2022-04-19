@@ -154,6 +154,8 @@ class ProdukController extends Controller
         
         $produk = Produk::findOrFail($id);
         $produk->delete();
+        $produkdetail = ProdukDetail::where('produk_id', $id)->first();
+        $produkdetail->delete();
         if($produk->gambar){
             Storage::delete($produk->gambar);
         }
