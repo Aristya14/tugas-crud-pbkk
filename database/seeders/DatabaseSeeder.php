@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Produk;
+use App\Models\ProdukDetail;
 
 class DatabaseSeeder extends Seeder
 {
@@ -30,6 +31,18 @@ class DatabaseSeeder extends Seeder
             'Quantity' => '70',
             'Expired'=>'2022-10-10',
             'gambar'=> 'post-gambar\Pk7j9WANOu67lAJdHjIrfwQy9EPy1AQhO6PIX9Il.jpg'
+        ]);
+        ProdukDetail::create([
+            'produk_id' =>'1',
+            'bahan' =>'coklat, tepung terigu, gula',
+            'kategori'=>'Kue',
+            'pabrik'=>'PT Sederhana Goyang Lidah',
+        ]);
+        ProdukDetail::create([
+            'produk_id' =>'2',
+            'bahan' =>'biji kopi, tepung tapioka',
+            'kategori'=>'Snack',
+            'pabrik'=>'PT Kapal Apaya',
         ]);
         
     }

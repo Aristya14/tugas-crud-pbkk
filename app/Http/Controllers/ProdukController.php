@@ -130,9 +130,15 @@ class ProdukController extends Controller
             }
             $validatedData['gambar']=$request->file('gambar')->store('post-gambar');
         };
-
+        $data= $request->all();
         $produk = Produk::findOrFail($id);
         $produk->update($validatedData);
+        ProdukDetail::where('produk_id', '=', $id)->update([
+            'bahan'=> $data['bahan'],
+            'pabrik'=> $data['pabrik'],
+            'kategori'=> $data['kategori'],
+        ]);
+        
         
         return redirect()->route('home')->with('edit_produk', 'Update data Produk berhasil');
     }

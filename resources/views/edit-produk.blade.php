@@ -95,7 +95,7 @@
                                 @enderror
                                 <div>
                                     <input class="mt-3 form-control form-control-lg" name="pabrik" type="text"
-                                        placeholder="pabrik" autofocus required value="{{ $data->produkdetail->pabrik ? $data->produkdetail->pabrik : 'Tidak Ada Data' }}" readonly>
+                                        placeholder="pabrik" autofocus required value="{{ $data->produkdetail->pabrik ? $data->produkdetail->pabrik : 'Tidak Ada Data' }}" >
                                 </div>
 
                                 @error('pabrik')
@@ -106,7 +106,7 @@
                                 
                                 <div>
                                     <input class="mt-3 form-control form-control-lg" name="kategori" type="text"
-                                        placeholder="kategori" autofocus required value="{{ $data->produkdetail->kategori ? $data->produkdetail->kategori : 'Tidak Ada Data' }}" readonly>
+                                        placeholder="kategori" autofocus required value="{{ $data->produkdetail->kategori ? $data->produkdetail->kategori : 'Tidak Ada Data' }}" >
                                 </div>
 
                                 @error('kategori')
@@ -116,7 +116,7 @@
                                 @enderror
                                 <div>
                                     <input class="mt-3 form-control form-control-lg" name="bahan" type="text"
-                                        placeholder="Bahan Baku" autofocus required value="{{ $data->produkdetail->bahan ? $data->produkdetail->bahan : 'Tidak Ada Data' }}" readonly>
+                                        placeholder="Bahan Baku" autofocus required value="{{ $data->produkdetail->bahan ? $data->produkdetail->bahan : 'Tidak Ada Data' }}" >
                                 </div>
 
                                 @error('bahan')
