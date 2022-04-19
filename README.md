@@ -1,3 +1,9 @@
+# TUGAS CRUD
+Aristya Vika - 05111940000233
+PBKK B
+Tabel produk : id, nama, gambar produk, deskripsi produk, expired, quantity barang
+Tabel produk_detail : id, produk_id(foreign key),Kategori, perusahaan produksi, komposisi bahan 
+
 ## tampilan Awal
 
 ![alt text](https://github.com/Aristya14/tugas-crud-pbkk/blob/main/screenshoot/tampilan%20awal.png)
